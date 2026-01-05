@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>BinPacking App</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>3D Bin Packing (MVP)</h1>
+        <p>Enter boxes + items → click Pack → see a 3D preview.</p>
+      </header>
+
+      <section class="grid">
+        <div class="card">
+          <h2>Containers (Boxes)</h2>
+          <div id="containers"></div>
+          <button id="addContainer">+ Add Container</button>
+        </div>
+
+        <div class="card">
+          <h2>Items</h2>
+          <div id="items"></div>
+          <button id="addItem">+ Add Item</button>
+
+          <div class="actions">
+            <button id="packBtn">Pack Shipment</button>
+            <span id="status"></span>
+          </div>
+
+          <h3>Results</h3>
+          <pre id="results">{}</pre>
+        </div>
+
+        <div class="card">
+          <h2>3D Preview</h2>
+          <div class="row">
+            <label>View container:</label>
+            <select id="containerSelect"></select>
+          </div>
+          <div id="viewer"></div>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
